@@ -1,8 +1,9 @@
 export interface User {
-    id: string;
-    name: string;
+    id: string;  // 確保 id 是 string
+    email?: string | null;
+    name?: string | null;
     lineId?: string;
-    role: 'admin' | 'member';
+    role?: 'admin' | 'member';
 }
 
 export interface Group {
